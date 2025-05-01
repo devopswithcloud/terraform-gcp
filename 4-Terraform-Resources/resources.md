@@ -43,7 +43,7 @@ resource "google_compute_network" "tf_vpc" {
 
 ---
 
-## Additional Example: Compute Instance (GCE VM)
+## Additional Example: Creaing subnets 
 
 ```hcl
 # Provider 
