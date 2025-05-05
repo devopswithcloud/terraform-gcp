@@ -1,0 +1,27 @@
+# Task-1
+* Create a VPC
+* Create 2 subnets in us-central1 and asia-southeast-1
+* Create a virtual machine with startup-script and make sure this vm is having a static ip.
+
+
+# Task-2
+* Create a VPC
+* Create 2 subnets in us-central1 and asia-southeast-1
+* Create a virtual machine with startup-script and make sure this vm is not having a public ip.
+
+# Task-3
+* Create a VPC
+* Create 2 subnets in us-central1 and asia-southeast-1
+* Create a virtual machine with startup-script and make sure this vm is not having a public ip.
+* Try to login to the vm (Make sure you dont have the firewall to open port 22 across the globe)
+    * 22 open src range : 0.0.0.0/0 =====> this shoul not be the case 
+
+
+
+# Task-4
+* Create a VPC1 and VPC2
+* Create a subnet with your custom range in both vpcs
+* Create 2 vms in each vpc 
+* Create a firewall rule to allow ssh, http, icmp in both vpcs.
+* Next login to vm in vpc1 and ping vm in vpc2 .
+* Implement Peering through terraform 
