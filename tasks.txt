@@ -25,3 +25,11 @@
 * Create a firewall rule to allow ssh, http, icmp in both vpcs.
 * Next login to vm in vpc1 and ping vm in vpc2 .
 * Implement Peering through terraform 
+
+
+# Task-5
+* Create a VPC
+* Create 2 subnets in us-central1 and asia-southeast-1
+* Create a virtual machine with startup-script and make sure this vm is having a static ip.
+    * wherther a vm should have static ip or not is the customer choise
+    * create a condition where i can pass through terraform.tfvars my values, and if i want static ip create it, if not go with epemeral
