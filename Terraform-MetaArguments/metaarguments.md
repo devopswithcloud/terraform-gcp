@@ -49,6 +49,7 @@ Without meta-arguments, you'd have to:
 Imagine Terraform like a robot deploying cloud resources.
 You can give the robot meta-commands like:
 
+* “Use this account/project to deploy this resource” → `provider = google.project_b`
 * “Make 3 copies of this instance” → `count = 3`
 * “Use these specific keys to create different resources” → `for_each`
 * “ Never delete this by mistake!” → `prevent_destroy`
@@ -60,6 +61,7 @@ You can give the robot meta-commands like:
 
 | Benefit                         | Meta-Argument               |
 | ------------------------------- | --------------------------- |
+| Use specific provider/project	  | `provider`                  |
 | Scale resources easily          | `count`, `for_each`         |
 | Avoid destruction disasters     | `lifecycle.prevent_destroy` |
 | Handle resource order           | `depends_on`                |
