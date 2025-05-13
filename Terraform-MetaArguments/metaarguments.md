@@ -9,7 +9,7 @@ In Terraform, **meta-arguments** are special keywords you can use **inside any r
 
 ---
 
-## 🔧 Why Do We Need Meta-Arguments?
+##  Why Do We Need Meta-Arguments?
 
 Let’s say you're creating:
 
@@ -22,7 +22,7 @@ Let’s say you're creating:
 
 ---
 
-## 📦 Categories of Meta-Arguments
+##  Categories of Meta-Arguments
 
 | Meta-Argument | What It Does                                                         |
 | ------------- | -------------------------------------------------------------------- |
@@ -34,25 +34,25 @@ Let’s say you're creating:
 
 ---
 
-## 🎯 Real-World Need
+## Real-World Need
 
 Without meta-arguments, you'd have to:
 
-* Write the same resource multiple times manually 😩
-* Get errors because Terraform tried to delete a VPC before a subnet 😡
-* Accidentally destroy a critical VM 😱
+* Write the same resource multiple times manually 
+* Get errors because Terraform tried to delete a VPC before a subnet 
+* Accidentally destroy a critical VM 
 
 ---
 
-## 🧑‍🏫 Simple Analogy
+## Simple Analogy
 
 Imagine Terraform like a robot deploying cloud resources.
 You can give the robot meta-commands like:
 
-* “🧍Make 3 copies of this instance” → `count = 3`
-* “🔑 Use these specific keys to create different resources” → `for_each`
-* “⛔ Never delete this by mistake!” → `prevent_destroy`
-* “🚦Don’t do this until that is done” → `depends_on`
+* “Make 3 copies of this instance” → `count = 3`
+* “Use these specific keys to create different resources” → `for_each`
+* “ Never delete this by mistake!” → `prevent_destroy`
+* “Don’t do this until that is done” → `depends_on`
 
 ---
 
