@@ -1,4 +1,4 @@
-# Terraform Notes: **String Variables with Real Example**
+# Terraform Variables – Type: `string`
 
 ## What is a String Variable?
 
