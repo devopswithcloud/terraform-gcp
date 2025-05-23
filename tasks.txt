@@ -33,3 +33,25 @@
 * Create a virtual machine with startup-script and make sure this vm is having a static ip.
     * wherther a vm should have static ip or not is the customer choise
     * create a condition where i can pass through terraform.tfvars my values, and if i want static ip create it, if not go with epemeral
+
+
+# Big-Project 
+## Part-1
+* vpc, firewall, subnet 
+* Create an instance template in centra1 with cusotm startup script
+* Create an instance template in us-east4 with cusotm startup script
+* Create a Instance Group in both the regions with autoscaling configured , health checks, and port mapping 
+* Create a static ip for the load balacner 
+* create a backend service and add both the instance groups in that 
+* Create a frontend with http load balancer
+* Create a route(/) to go to the backends 
+
+## Part-2
+* Create a dns public zone with your custom domain name (i27academy.in)
+* Delegate the nameserver records to godaddy.(If domain is created in gcp domains, ignore this step)
+* Map the a record to the static ip created above(as this points to load balancer)
+* Implement Self sgined certificate and modufy the load balacner frontend to have https 
+* After that replace the self signed certificate with google managed certificate .
+
+* End goal
+* https://www.i27academy.in > DNS > LoadBalancer > Routes > Backend service > BackendsCreated
