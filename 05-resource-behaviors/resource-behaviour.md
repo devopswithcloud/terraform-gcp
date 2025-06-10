@@ -1,6 +1,6 @@
 # Terraform Resource Behavior with Complete Infrastructure Setup
 
-* This document provides examples of Terraform resource behavior, including creating, updating in place, stopping to update, destroying and recreating, and fully destroying resources. 
+* This document provides examples of Terraform resource behavior, including `creating`, `updating in place`, `stopping to update`, `destroying and recreating`, and fully destroying resources. 
 * Each example includes a full infrastructure setup with a VPC, subnet, firewall, and Google Compute Engine instance to ensure the infrastructure is self-contained and can be cleanly destroyed after each example.
 
 ## Scope
