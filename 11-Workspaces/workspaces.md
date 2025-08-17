@@ -105,6 +105,13 @@ terraform apply   # Will create vm-dev and vpc-dev
 # Switch to prod
 terraform workspace select prod
 terraform apply   # Will create vm-prod and vpc-prod
+
+# cleanup after practise
+terraform workspace select dev
+terraform destroy --auto-approve
+
+terraform workspace select prod
+terraform destroy --auto-approve
 ```
 
 👉 Each environment (`dev`, `prod`) has its **own state file**, so resources don’t overlap.
