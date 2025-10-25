@@ -1,0 +1,6 @@
+local_vpc_name = "test-vpc"
+local_subnet_name = "test-subnet"
+local_subnet_cidr = "10.9.0.0/16"
+local_vm_name = "test-vm"
+local_machine_type = "e2-medium"
+local_zone = "us-central1-a"
